@@ -170,7 +170,7 @@ body {
 @media screen and (max-width: 600px) {
   /* Keep the content from overflowing */
   body{
-    overflow: hidden;
+    overflow: auto;
   }
   /* Hide normal nav links */
   .nav-item {
@@ -201,4 +201,5 @@ body {
   .site-footer{
     display: none;
   }
+
 }
