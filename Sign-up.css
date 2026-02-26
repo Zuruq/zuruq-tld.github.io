@@ -1,0 +1,249 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F3F4F6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #3B4758;
+}
+
+/* Font for the Logo */
+@font-face {
+    font-family: 'Island Moments Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Island Moments Regular'), 
+    url('IslandMoments-Regular.woff')
+     format('woff');
+}
+
+/* Split-Screen Layout */
+.login-container {
+    display: flex;
+}
+
+.hero-section {
+    flex: 1;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image 11.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #e67e22; /* Fallback accent color */
+}
+
+.hero-content{
+    text-align: center;
+}
+.form-section {
+    flex: 1;
+    background: #F3F4F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 400px;
+}
+
+.header-logo {
+    font-family: 'Georgia', serif;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+.logo-orange { 
+    color: #FF7A18;
+     font-family:'Island Moments Regular';
+     font-size: 40px;
+     text-decoration: none;
+}
+
+/* UI Elements */
+.input-group { 
+    margin-bottom: 20px; 
+}
+
+label { 
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px; 
+}
+
+.input { 
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #F3F4F6;
+    margin-bottom: 5px;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6600; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.radio-con{
+    display: flex;
+    gap: 10px;
+}
+
+/* Pay Button */
+.pay-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #FF7A18; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pay-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Anchor tag for pay button */
+.next{
+    text-decoration: none;
+    color: white;
+}
+
+/* Other login options */
+.pay-btn-2{
+    width: 100%;
+    padding: 15px;
+    background-color: #FFFFFF; 
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pay-btn-2:hover{
+    background-color: #e65c00;
+}
+
+/* Anchor tag for other login options button */
+.next-2{
+    text-decoration: none;
+    color: #3B4758;
+}
+
+.crte-acct{
+    font-family: 'Georgia', serif;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #543A26;
+    color: #fff;
+    padding: 65px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.c-k{
+    color: #FF7A18;
+    font-family:'Island Moments Regular' ;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.footer-col ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+.footer-col li{
+    padding: 10px;
+}
+
+.footer-col li:hover{
+    color: #FF7A18;
+}
+
+.footer-col p {
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-right:19px ;
+}
+
+.footer-col p:hover{
+    color: #FF7A18;
+}
+
+.not-footer-col{
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* Media responsiveness */
+  
+@media screen and (max-width: 600px) {
+    .hero-section{
+        display: none;
+    }
+    
+    body{
+        overflow: scroll;
+      }
+
+    .input{
+        background-color:#FFFFFF ;
+    }
+
+    .form-section{
+        background-color: #FFFFFF;
+    }
+    
+    .site-footer{
+        display: none;
+    }
+   
+  }

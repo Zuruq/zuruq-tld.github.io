@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <!-- Link to CSS Page -->
+    <link rel="stylesheet" href="Payment-options.css">
+    <!-- Link to font awesome -->
+    <script src="https://kit.fontawesome.com/3f2c79e1ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+
+    <header class="header-container">
+        <div class="header-logo">
+            <a href="#" class="logo-orange">Chuks Kitchen</a>
+        </div>
+        
+        <nav class="header-nav" id="myTopnav">
+          <a href="#" class="nav-item">Home</a>
+          <a href="#" class="nav-item">Explore</a>
+          <a href="#" class="nav-item">My Orders</a>
+          <a href="#" class="nav-item">Account</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
+      
+        <form action="Sign-in.html" class="header-actions">
+          <button class="btn-login">Login</button>
+        </form>
+      </header>
+      <!-- The flexbox container -->
+    <main class="container">
+        
+        <!-- Payment Card -->
+        <section class="payment-card">
+            <h1 class="pay">Payment</h1>
+            <hr>
+            <label>Pay With:</label>
+            <form>
+
+                <!-- Radio group -->
+                <div class="radio-group">
+                    <label class="radio-container">
+                      <input type="radio" name="payment-method" value="card" class="input">
+                      Card
+                    </label>
+                    <label class="radio-container">
+                      <input type="radio" name="payment-method" value="bank" class="input">
+                      Bank
+                    </label>
+                    <label class="radio-container">
+                      <input type="radio" name="payment-method" value="transfer" class="input">
+                      Transfer
+                    </label>
+                  </div>
+
+                  <!-- Card Information -->
+                <div class="form-group">
+                    <label>Card Number</label>
+                    <input type="text" placeholder="1234 5678 9101 1121" class="input">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Expiry Date</label>
+                        <input type="text" placeholder="MM/YY" class="input">
+                    </div>
+
+                    <div class="form-group">
+                        <label>CVV</label>
+                        <input type="password" placeholder="123" class="input">
+                    </div>
+                </div>
+
+                <!-- Save card info -->
+                 <div class="radio-group">
+                    <label class="radio-container">
+                    <input type="checkbox" name="card-info" value="Sace-card-details">Save card details
+                    </label>
+                </div>
+
+                <!-- Payment Button -->
+                <button type="submit" class="pay-btn">
+                    <a href="Card-loading.html" class="next">Pay ₦ 9,900</a>  
+                </button>
+                
+                <div class="info">
+                    <h5>Your personal data will be used to process your order, support your experience<br>
+                         throughout this website, and for other purposes described in our privacy policy.</h5>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3 class="c-k" style="font-size:xx-large;">Chuks Kitchen</h3>
+                <p>Bringing the authentic<br> 
+                flavors of Nigerian<br> 
+                home cooking to your<br> 
+                table, with passion<br> 
+                and care.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>Explore</li>
+                    <li>My Order</li>
+                    <li>Account</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>+234 801 234 5678</p>
+                <p>hello@chukskitchen.com</p>
+                <p>123 Taste Blvd, Lagos, Nigeria</p> 
+            </div>
+            <div class="footer-col">
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Linkdln</p>
+                <p>Instagram</p> 
+            </div>
+            <div class="not-footer-col">
+             <h6>© 2020 Lift Media.All right reserved.</h6>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+     <script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+      <!-- Link to CSS Page -->
+      <link rel="stylesheet" href="Order-summary.css">
+      <!-- Link to font awesome -->
+    <script src="https://kit.fontawesome.com/3f2c79e1ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <!-- Navbar -->
+     <header class="header-container">
+        <div class="header-logo">
+            <a href="#" class="logo-orange">Chuks Kitchen</a>
+        </div>
+        
+        <nav class="header-nav" id="myTopnav">
+          <a href="#" class="nav-item">Home</a>
+          <a href="#" class="nav-item">Explore</a>
+          <a href="#" class="nav-item" style="color: #FF7A18;">My Orders</a>
+          <a href="#" class="nav-item">Account</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
+      
+        <form action="Sign-in.html" class="header-actions">
+            <button class="btn-login">Login</button>
+          </form>
+      </header>
+
+      <!-- Container -->
+       <main class="container">
+        <section class="order-sum">
+            <h1 class="pay">Order Summary</h1>
+            <hr>
+            <label class="group-label">Add a promo code:</label>
+            <div class="form-row">
+                <input type="text" placeholder="Enter Code here">
+                <form action="Sign-in.html" class="header-actions">
+                    <button class="btn-login">Login</button>
+                </form>
+            </div>
+
+            <!-- Fee breakdown -->
+            <div class="form-group">
+                <div class="form-row">
+                    <label>Subtotal</label>
+                    <label>₦9,200</label>
+                </div>
+
+                <div class="form-row">
+                    <label>Delivery fee</label>
+                    <label>₦500</label>
+                </div>
+
+                <div class="form-row">
+                    <label>Service fee</label>
+                    <label>₦200</label>
+                </div>
+
+                <div class="form-row">
+                    <label>Tax</label>
+                    <label>₦0</label>
+                </div>
+                
+            </div>
+            <div class="form-row">
+                <label class="group-label">Total</label>
+                <label class="group-label">₦9,900</label>
+            </div>
+
+            <!-- Delivery/pickup toggle -->
+            <div class="toggle-container">
+                <input type="radio" id="delivery" name="option" value="delivery" checked>
+                <label for="delivery">Delivery</label>
+                <input type="radio" id="pickup" name="option" value="pickup">
+                <label for="pickup">Pick up</label>
+            </div>  <!--Come back to this later-->
+
+            <!-- Special instruction -->
+            <div class="input-group">
+                <label class="group-label">Special Instruction for Restuarant</label>
+                <textarea placeholder="E.g no onion, food should be spicy, food is not too hot " class="del-input"></textarea>
+               </div>
+
+               <!-- Payment button -->
+         <button type="submit" class="pay-btn">
+            <a href="Delivery-details.html" class="next">Proceed to Checkout</a>
+        </button>
+        </section>
+       </main>
+
+       <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3 class="c-k" style="font-size:xx-large;">Chuks Kitchen</h3>
+                <p>Bringing the authentic<br> 
+                flavors of Nigerian<br> 
+                home cooking to your<br> 
+                table, with passion<br> 
+                and care.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>Explore</li>
+                    <li>My Order</li>
+                    <li>Account</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>+234 801 234 5678</p>
+                <p>hello@chukskitchen.com</p>
+                <p>123 Taste Blvd, Lagos, Nigeria</p> 
+            </div>
+            <div class="footer-col">
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Linkdln</p>
+                <p>Instagram</p> 
+            </div>
+            <div class="not-footer-col">
+             <h6>© 2020 Lift Media.All right reserved.</h6>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Javascript -->
+     <script src="javascript.js"></script>
+</body>
+</html>

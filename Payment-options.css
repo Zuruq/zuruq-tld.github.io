@@ -1,0 +1,284 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F3F4F6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Font for the Logo */
+@font-face {
+    font-family: 'Island Moments Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Island Moments Regular'), 
+    url('IslandMoments-Regular.woff')
+     format('woff');
+}
+
+/* Container for the entire header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Soft shadow for depth */
+  }
+  
+  /* Logo styling */
+  .header-logo {
+    font-family: 'Georgia', serif;
+    font-size: 22px;
+  }
+  
+  .logo-orange { 
+    color: #FF7A18;
+     font-family:'Island Moments Regular';
+     font-size: larger;
+     text-decoration: none;
+}
+  
+  /* Navigation links */
+  .header-nav {
+    display: flex;
+    gap: 70px;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .nav-item:hover{
+    color: #FF7A18;
+  }
+  
+  .header-nav .icon{
+    display: none;
+  }
+
+  /* Login button */
+  .btn-login {
+    background-color: #FF7A18;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    width: 150px;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .btn-login:hover {
+    opacity: 0.9;
+  }
+
+/* Center the card */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.payment-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.pay{
+    text-align: left;
+    margin-bottom: 14px;
+    font-size: 24px;
+    color: #333;
+}
+
+hr{
+    margin-bottom: 14px;
+}
+
+/* For the radio button alignment */
+.radio-group {
+    display: flex;
+    gap: 30px; 
+}
+  
+.radio-container {
+    display: flex;
+    align-items: center; /* Aligns the radio button and text vertically in the center */
+    cursor: pointer;
+    opacity: 50%;
+    padding-right:25px ;
+    margin-right: 25px;
+  }
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 125px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Save card info */
+/* .check-container{
+    display: flex;
+    align-items: center;
+    gap:8px;
+} */
+
+/* Pay Button */
+.pay-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #FF7A18; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pay-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Anchor tag for pay button */
+.next{
+    text-decoration: none;
+    color: white;
+}
+
+.info{
+    color: #7a6d6d;
+    font-size: x-small;
+    margin-top: 15px;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #543A26;
+    color: #fff;
+    padding: 65px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.c-k{
+    color: #FF7A18;
+    font-family:'Island Moments Regular' ;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.footer-col ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+.footer-col li{
+    padding: 10px;
+}
+
+.footer-col li:hover{
+    color: #FF7A18;
+}
+
+.footer-col p {
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-right:19px ;
+}
+
+.footer-col p:hover{
+    color: #FF7A18;
+}
+
+.not-footer-col{
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* Media responsiveness */
+@media screen and (max-width: 600px) {
+
+  /* Hide normal nav links */
+  .nav-item {
+    display: none;
+  }
+
+  /* Show hamburger */
+  .header-nav .icon {
+    display: block;
+    cursor: pointer;
+    color: #333;
+  }
+
+  /* When responsive class is added */
+  .header-nav.responsive {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .header-nav.responsive .nav-item {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* Hide footer */
+  .site-footer{
+    display: none;
+  }
+}
