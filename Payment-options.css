@@ -276,9 +276,14 @@ label {
     width: 100%;
     padding: 10px 0;
   }
+    
+   .radio-group{
+    gap: 10px;
+  }
 
   /* Hide footer */
   .site-footer{
     display: none;
   }
+
 }
